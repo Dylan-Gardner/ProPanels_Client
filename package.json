@@ -1,0 +1,69 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "npm": "6.12.1",
+    "node": "12.13.1"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.7.4",
+    "@devexpress/dx-react-core": "^2.3.1",
+    "@devexpress/dx-react-scheduler": "^2.3.1",
+    "@devexpress/dx-react-scheduler-material-ui": "^2.3.1",
+    "@material-ui/core": "^4.7.1",
+    "@material-ui/icons": "^4.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
+    "history": "^4.10.1",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "passport-spotify": "^1.1.0",
+    "popper.js": "^1.16.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-cookie": "^4.0.1",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-spotify-web-playback": "^0.6.0",
+    "redux": "^4.0.4",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "serve": "^11.2.0",
+    "webpack": "^4.41.2"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "deploy": "cp -a build/. ../public/",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "yarn && yarn run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
