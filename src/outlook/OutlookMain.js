@@ -1,5 +1,4 @@
 import React from "react"
-import axios from 'axios'
 import '../spotify.css'
 import ScheduleView from "./ScheduleView";
 import { connect } from 'react-redux';
