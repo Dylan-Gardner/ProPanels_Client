@@ -51,6 +51,7 @@ class SpotifyMain extends React.Component {
     async getUserToken(){
         const response = await fetch('/api/v1/spotify/get_token', {
             method: 'GET',
+            accept: 'application/json',
             headers: {
                 "access-token": this.props.token,
                 "token-type" : "Bearer",
