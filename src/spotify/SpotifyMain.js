@@ -9,6 +9,7 @@ import TrackView from "./TrackView";
 import PlaylistView from "./PlaylistView"
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types'
+import { Paper } from '@material-ui/core';
 
 class SpotifyMain extends React.Component {
     constructor(props) {
@@ -118,13 +119,19 @@ class SpotifyMain extends React.Component {
         return(<Container fluid={true}>
             <Row>
                 <Col>
+                <Paper>
+                    Saved Songs
                     {this.state.tracks.length > 0 &&
                     <TrackView parentCallback={this.songSelectCallback} tracks={this.state.tracks}/>
                     }
+                </Paper>
                 </Col>
                 <Col>
+                <Paper>
+                    Playlists
                     {this.state.playlists.length > 0 &&
                     <PlaylistView parentCallback={this.playlistSelectCallback} playlists={this.state.playlists}/>}
+                </Paper>
                 </Col>
             </Row>
             <Navbar fixed={"bottom"}>
