@@ -27,7 +27,7 @@ class Header extends React.Component {
     render() {
         return(
             <Navbar bg={"primary"} variant={"dark"}>
-                <Navbar.Brand>Workflow</Navbar.Brand>
+                <Navbar.Brand>ProPanels</Navbar.Brand>
                 <Navbar.Collapse className={"justify-content-end"}>
                     <Navbar.Text>
                         Signed in as:
